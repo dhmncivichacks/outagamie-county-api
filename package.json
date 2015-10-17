@@ -1,0 +1,28 @@
+{
+  "name": "outagamie-county-api",
+  "version": "1.0.0",
+  "description": "Outagamie County api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhmncivichacks/outagamie-county-api.git"
+  },
+  "author": "Chris Jaure <chrisjaure@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhmncivichacks/outagamie-county-api/issues"
+  },
+  "homepage": "https://github.com/dhmncivichacks/outagamie-county-api#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "node-fetch": "^1.3.3",
+    "outagamie-county-recycling": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.7.1"
+  }
+}
