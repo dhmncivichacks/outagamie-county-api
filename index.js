@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var fetch = require('node-fetch');
 var nextRecycleDate = require('outagamie-county-recycling').getNextRecycleDate;
 var app = express();
@@ -11,6 +12,8 @@ function sendError(res, message) {
     });
     res.end();
 }
+
+app.use(cors());
 
 app.get('/', function (req, res) {
     res.end('Welcome!');
