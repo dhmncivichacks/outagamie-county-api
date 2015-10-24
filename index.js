@@ -51,6 +51,3 @@ server = app.listen(process.env.PORT || 3000, function () {
     var address = server.address();
     console.log('Listening on http://%s:%s', address.address, address.port);
 });
-
-
-//[{"collectionType":"trash","collectionDate":"2015-10-23"},{"collectionType":"trash","collectionDate":"2015-10-30"},{"collectionType":"recycling","collectionDate":"2015-10-30"},{"collectionType":"trash","collectionDate":"2015-11-06"},{"collectionType":"trash","collectionDate":"2015-11-13"},{"collectionType":"recycling","collectionDate":"2015-11-13"}]
