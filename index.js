@@ -29,7 +29,7 @@ app.get('/garbagecollection', function (req, res) {
         return response.json();
     }).then(function (json) {
         if (!json.results || !json.results[0]) {
-            Promise.reject(new Error('No address found!'));
+            return Promise.reject(new Error('No address found!'));
         }
         return json.results[0].geometry.location;
     }).then(function (location) {
@@ -44,7 +44,7 @@ app.get('/garbagecollection', function (req, res) {
     }).catch(function (err) {
         console.log(err);
         sendError(res, err.message);
-    })
+    });
 });
 
 server = app.listen(process.env.PORT || 3000, function () {
