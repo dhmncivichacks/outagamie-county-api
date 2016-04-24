@@ -36,7 +36,7 @@ app.get('/garbagecollection', function (req, res) {
         var result = [
             {
                 collectionType: 'recycling',
-                collectionDate: nextRecycleDate([location.lng, location.lat]).toISOString()
+                collectionDate: nextRecycleDate([location.lng, location.lat]).toISOString().split('T')[0]
             }
         ];
         res.json(result);
