@@ -24,6 +24,6 @@
     "outagamie-county-recycling": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^1.7.1"
+    "eslint": ">=4.18.2"
   }
 }
