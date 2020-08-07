@@ -24,7 +24,7 @@ app.get('/garbagecollection', function (req, res) {
     if (!addr) {
         return sendError(res, 'No `addr` parameter provided!');
     }
-    var googleapi = 'http://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(addr);
+    var googleapi = `http://maps.googleapis.com/maps/api/geocode/json?key=${process.env.GoogleApiKey}&address=${encodeURIComponent(addr)}`;
     fetch(googleapi).then(function (response) {
         return response.json();
     }).then(function (json) {
